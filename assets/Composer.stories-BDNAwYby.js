@@ -1,0 +1,3 @@
+import{o as r,j as t,Y as n}from"./index-BBewekbp.js";import"./iframe-DR91NUe3.js";import"./index-ByTpyEB3.js";function a(){const{client:s,clientState:o}=r({clientId:"$CLIENT_ID$"});return t.jsx(n,{disableComposer:!1,isReadOnly:!1,allowFileUpload:!0,connected:o!=="disconnected",sendMessage:s?.sendMessage,uploadFile:s?.uploadFile,composerPlaceholder:"Type a message..."})}a.__docgenInfo={description:"",methods:[],displayName:"App"};const i={title:"Composer",component:a,parameters:{layout:"centered"},tags:[],argTypes:{},args:{}},e={args:{}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {}
+}`,...e.parameters?.docs?.source}}};const l=["Primary"];export{e as Primary,l as __namedExportsOrder,i as default};
