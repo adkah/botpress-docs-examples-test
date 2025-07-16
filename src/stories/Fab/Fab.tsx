@@ -1,12 +1,16 @@
-import { Fab } from '@botpress/webchat'
-import { useState } from 'react'
+import { Fab } from "@botpress/webchat";
 
 function App() {
-  const [isWebchatOpen, setIsWebchatOpen] = useState(false)
-
   return (
-    <Fab onClick={() => setIsWebchatOpen(!isWebchatOpen)} />
-  )
+      <Fab
+        style={{
+          position: "fixed",
+          right: "20px",
+          width: "64px",
+          height: "64px",
+        }}
+      />
+  );
 }
 
-export default App
+export default App;

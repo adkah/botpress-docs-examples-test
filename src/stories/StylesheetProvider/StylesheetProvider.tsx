@@ -2,12 +2,12 @@ import { StylesheetProvider, Webchat, Fab } from '@botpress/webchat'
 import { useState } from 'react'
 
 const config = {
-  color: '#FF0000',
-  fontFamily: 'rubik',
+  color: '#3778f0',
+  fontFamily: 'Inter',
   radius: 1,
-  variant: 'soft',
-  themeMode: 'dark',
-  headerVariant: 'soft'
+  variant: 'glass',
+  themeMode: 'light',
+  headerVariant: 'glass'
 }
 
 function App() {
@@ -24,9 +24,10 @@ function App() {
         radius={config.radius}
         variant={config.variant}
         themeMode={config.themeMode}
+        headerVariant={config.headerVariant}
       />
       <Webchat
-        clientId="$CLIENT_ID$" // Your client ID here
+        clientId="e39c5901-b678-47f4-b95b-37f743dc3917" // Your client ID here
         style={{
         width: '400px',
         height: '600px',

@@ -1,36 +1,28 @@
 import { Fab, Webchat } from '@botpress/webchat'
-import { useState } from 'react'
+
+const configuration = {
+  botName: 'Bot',
+  feedbackEnabled: false, 
+  footer: '[⚡️ by Botpress](https://botpress.com/?from=webchat)',
+  radius: '4'
+}
 
 function App() {
-const [isWebchatOpen, setIsWebchatOpen] = useState(false)
-const toggleWebchat = () => {
-    setIsWebchatOpen((prevState) => !prevState)
-}
-return (
-    <>
-    <Webchat
-        clientId="$CLIENT_ID$" // Your client ID here
-        style={{
-        width: '400px',
-        height: '600px',
-        display: isWebchatOpen ? 'flex' : 'none',
-        position: 'fixed',
-        bottom: '90px',
-        right: '20px',
-        }}
-    />
-    <Fab
-        onClick={() => toggleWebchat()}
-        style={{
-        position: 'fixed',
-        bottom: '20px',
-        right: '20px',
-        width: '64px',
-        height: '64px'
-        }}
-    />
-    </>
-)
+    return (
+        <Webchat
+            clientId="c710a569-31d9-4efd-95f7-1cdd16fe7f95"
+            configuration={configuration}
+            style={{
+                width: '400px',
+                height: '500px',
+                position: 'fixed',
+                // top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, 0%)',
+                display: 'flex'
+            }}
+        />
+    )
 }
 
 export default App

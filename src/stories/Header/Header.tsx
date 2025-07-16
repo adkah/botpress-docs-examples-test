@@ -1,24 +1,24 @@
-import { Header, useWebchat } from '@botpress/webchat'
+import { Header, Container, useWebchat } from '@botpress/webchat'
 import { useState } from 'react'
 
 // Every attribute that the header component can take
 const headerConfig = {
-  botName: 'SupportBot',
+  botName: 'Bot Name',
   botAvatar: 'https://cdn.botpress.cloud/bot-avatar.png',
-  botDescription: 'Your virtual assistant for all things support.',
+  botDescription: 'This is a description of your bot.',
 
   phone: {
-    title: 'Call Support',
+    title: 'Phone',
     link: 'tel:+1234567890',
   },
 
   email: {
-    title: 'Email Us',
+    title: 'Email',
     link: 'mailto:support@example.com',
   },
 
   website: {
-    title: 'Visit our website',
+    title: 'Website',
     link: 'https://www.example.com',
   },
 
@@ -39,16 +39,27 @@ function App() {
   const { newConversation } = useWebchat({
     clientId: '$CLIENT_ID$', // Insert your client id here
   })
-
   return (
+    <Container
+      // connected={clientState !== 'disconnected'}
+      style={{
+        width: '400px',
+        height: '95%',
+        display: 'flex',
+        position: 'fixed',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+      }}
+    >
       <Header
-      // onOpenChange={() => console.log('Override the header open change')}
-      defaultOpen={true}
-      closeWindow={() => setIsWebchatOpen(false)}
-      restartConversation={newConversation}
-      disabled={false}
-      configuration={headerConfig}
-    />
+        defaultOpen={false}
+        closeWindow={() => setIsWebchatOpen(false)}
+        restartConversation={newConversation}
+        disabled={false}
+        configuration={headerConfig}
+        />
+    </Container>
   )
 }
 

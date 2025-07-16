@@ -12,12 +12,13 @@ function App() {
     <Container
       connected={clientState !== 'disconnected'}
       style={{
-        width: '500px',
-        height: '800px',
-        display: isWebchatOpen ? 'flex' : 'none',
+        width: '400px',
+        height: '95%',
+        display: 'flex',
         position: 'fixed',
-        bottom: '90px',
-        right: '20px',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
       }}
     >
       <span
