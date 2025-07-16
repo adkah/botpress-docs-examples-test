@@ -1,0 +1,3 @@
+import{j as e}from"./index-Dqd38KwZ.js";import{Z as o}from"./index-DSz_XBtn.js";import"./iframe-0fwRrB_R.js";import"./index-5QGh5hi7.js";function t(){return e.jsx(o,{style:{position:"fixed",right:"20px",width:"64px",height:"64px"}})}t.__docgenInfo={description:"",methods:[],displayName:"App"};const m={title:"Fab",component:t,parameters:{},tags:[],argTypes:{onClick:{action:"clicked"}},args:{}},r={args:{}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+  args: {}
+}`,...r.parameters?.docs?.source}}};const n=["Primary"];export{r as Primary,n as __namedExportsOrder,m as default};
